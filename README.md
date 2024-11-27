@@ -28,12 +28,19 @@ Repository là nơi lưu trữ sản phẩm của quá trình thu thập, khám 
 
 ## III. Thông tin đồ án:
 
-### 1. Bộ dữ liệu (Dataset)
+### 0. Tổng quan
 
-- **Tác giả:** [Sergi Lehkyi](https://www.kaggle.com/slehkyi)
-- **Nguồn:** Dữ liệu được lấy từ trang [understat](https://understat.com)
+- Notebook `01_collecting_data.ipynb`: Quan sát hai bộ dữ liệu thu thập được và tổng hợp thành bộ dữ liệu hoàn chỉnh cho quá trình khám phá và phân tích.
 
-Bộ dữ liệu được tham khảo từ trang [Football Data: Expected Goals and Other Metrics - Kaggle](https://www.kaggle.com/datasets/slehkyi/extended-football-stats-for-european-leagues-xg). Dữ liệu cho phép phân tích chuyên sâu về từng trận đấu trong các giải đấu hàng đầu Châu Âu, từ các thông số, ta có thể khai thác được những yếu tố ít được quan tâm nhưng làm nên sự thành công của đội bóng và từ đó kết luận được chiến thuật và chiến lược đội bóng áp dụng cho mùa giải.
+### 1. Thu thập dữ liệu (Collecting data)
+
+**Tác giả:** [Sergi Lehkyi](https://www.kaggle.com/slehkyi)
+
+**Nguồn:** Dữ liệu được lấy từ trang [understat](https://understat.com)
+
+**Phương pháp thu thập dữ liệu:** Thu thập dữ liệu từng trận đấu bằng việc crawl thông tin từ trang web (BeautifulSoup) và tổng hợp kết quả vào một file dữ liệu thống nhất.
+
+**Chủ đề:** Bộ dữ liệu được tham khảo từ trang [Football Data: Expected Goals and Other Metrics - Kaggle](https://www.kaggle.com/datasets/slehkyi/extended-football-stats-for-european-leagues-xg). Dữ liệu cho phép phân tích chuyên sâu về từng trận đấu trong các giải đấu hàng đầu Châu Âu, từ các thông số, ta có thể khai thác được những yếu tố ít được quan tâm nhưng làm nên sự thành công của đội bóng và từ đó kết luận được chiến thuật và chiến lược đội bóng áp dụng cho mùa giải.
 
 Bộ dữ liệu bao gồm các thông số tổng hợp sau một mùa giải của các đội bóng thuộc 6 giải đấu thuộc UEFA từ năm 2014 đến năm 2019 bao gồm: La Liga (Tây Ban Nha), EPL (Anh), Bundesliga (Đức), Serie A (Ý), Ligue 1 (Pháp), RFPL (Nga)
 
