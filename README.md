@@ -30,7 +30,8 @@ Repository là nơi lưu trữ sản phẩm của quá trình thu thập, khám 
 
 ### 0. Tổng quan
 
-- Notebook `01_collecting_data.ipynb`: Quan sát hai bộ dữ liệu thu thập được và tổng hợp thành bộ dữ liệu hoàn chỉnh cho quá trình khám phá và phân tích.
+- Notebook `01_collecting_data.ipynb`: Quan sát hai bộ dữ liệu thu thập được và tổng hợp thông tin của cả hai bộ dữ liệu cho quá trình khám phá và phân tích.
+- Notebook `02_exploring_data.ipynb`: Khám phá và tiền xử lý bộ dữ liệu để đặt vấn đề và phục vụ trả lời câu hỏi.
 
 ### 1. Thu thập dữ liệu (Collecting data)
 
@@ -72,7 +73,7 @@ Bộ dữ liệu sẽ gồm các thông số cơ bản như: thứ hạng (posit
 
 - xpts_diff - sai số giữa số điểm thực tế và số điểm kỳ vọng của đội
 
-### 2. Khám phá dữ liệu (EDA)
+### 2. Khám phá dữ liệu (Exploring data & preprocess)
 
 ### 3. Câu hỏi được đúc kết từ quá trình khai thác dữ liệu (Asking meaningful questions)
 
