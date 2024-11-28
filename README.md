@@ -39,7 +39,10 @@ Repository là nơi lưu trữ sản phẩm của quá trình thu thập, khám 
 
 **Nguồn:** Dữ liệu được lấy từ trang [understat](https://understat.com)
 
-**Phương pháp thu thập dữ liệu:** Thu thập dữ liệu từng trận đấu bằng việc crawl thông tin từ trang web (BeautifulSoup) và tổng hợp kết quả vào một file dữ liệu thống nhất.
+**Phương pháp thu thập dữ liệu:** Thu thập dữ liệu từng trận đấu bằng việc crawl thông tin từ trang web (BeautifulSoup) thành 2 file csv và tổng hợp kết quả vào một file dữ liệu thống nhất. Bộ dữ liệu trong thư mục `data` là những dữ liệu đã qua xử lý nhằm phù hợp với mục đích nghiên cứu của đồ án. Bộ dữ liệu trong thư mục `raw data` là bộ dữ liệu gốc của tác giả. Trong đó, có 2 tập tin dữ liệu csv có ý nghĩa như sau:
+
+- `understat.com.csv`: gồm các thông tin tổng quát của các đội ở các mùa giải trong từng hệ thống giải đấu.
+- `understat_per_game.csv`: gồm các thông tin và thông số chuyên sâu về từng trận đấu của đội đó ở các mùa giải trong từng hệ thống giải đấu.
 
 **Chủ đề:** Bộ dữ liệu được tham khảo từ trang [Football Data: Expected Goals and Other Metrics - Kaggle](https://www.kaggle.com/datasets/slehkyi/extended-football-stats-for-european-leagues-xg). Dữ liệu cho phép phân tích chuyên sâu về từng trận đấu trong các giải đấu hàng đầu Châu Âu, từ các thông số, ta có thể khai thác được những yếu tố ít được quan tâm nhưng làm nên sự thành công của đội bóng và từ đó kết luận được chiến thuật và chiến lược đội bóng áp dụng cho mùa giải.
 
