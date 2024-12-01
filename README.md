@@ -48,7 +48,9 @@ Repository là nơi lưu trữ sản phẩm của quá trình thu thập, khám 
 
 Bộ dữ liệu bao gồm các thông số tổng hợp sau một mùa giải của các đội bóng thuộc 6 giải đấu thuộc UEFA từ năm 2014 đến năm 2019 bao gồm: La Liga (Tây Ban Nha), EPL (Anh), Bundesliga (Đức), Serie A (Ý), Ligue 1 (Pháp), RFPL (Nga)
 
-Bộ dữ liệu sẽ gồm các thông số cơ bản như: thứ hạng (position), team (tên đội), số trận đã chơi trong giải đấu (matches), số trận thắng - hòa - thua (wins, draws, loses), số bàn ghi được (GF), số bàn thủng lưới (GA), số điểm (points). Ngoài ra, bộ dữ liệu còn các thông số khác như:
+### 2. Khám phá dữ liệu (Exploring data & preprocess)
+
+**Ý nghĩa của từng đặc trưng:** Bộ dữ liệu sẽ gồm các thông số cơ bản như: thứ hạng (position), team (tên đội), số trận đã chơi trong giải đấu (matches), số trận thắng - hòa - thua (wins, draws, loses), số bàn ghi được (GF), số bàn thủng lưới (GA), số điểm (points). Ngoài ra, bộ dữ liệu còn các thông số khác như:
 
 - xG - bàn thắng kỳ vọng, thông số thể hiện chất lượng của cú dứt điểm được tạo ra bởi cầu thủ. Trong bộ dữ liệu này, bàn thắng kỳ vọng thể hiện số chất lượng các cú dứt điểm đến từ đội bóng.
 
@@ -76,7 +78,14 @@ Bộ dữ liệu sẽ gồm các thông số cơ bản như: thứ hạng (posit
 
 - xpts_diff - sai số giữa số điểm thực tế và số điểm kỳ vọng của đội
 
-### 2. Khám phá dữ liệu (Exploring data & preprocess)
+**Thông tin các bộ dữ liệu**: Nhóm thực hiện phân tích trên 2 bộ dữ liệu `understat.com.csv` (tổng quan) và bộ dữ liệu `understat_per_game.csv` (chi tiết từng trận đấu), tạm gọi hai bộ dữ liệu này là `overview` và `games`, các bộ chi tiết bao gồm:
+
+- `overview`: 684 dòng và 24 cột
+- `games`: 24580 dòng và 29 cột
+- Cả hai bộ dữ liệu đều không có dòng bị trùng lặp
+- Sau khi thực hiện quá trình tiền xử lý, ta sẽ được 2 file tiền xử lý là `understat.com_preprocess.csv` và `understat_per_game_preprocess.csv`
+
+**Các câu hỏi khác:** Các câu hỏi liên quan tới quá trình khám phá dữ liệu đã được phân tích chi tiết trong file [`02_exploring_data.ipynb`](https://github.com/ntkwan/csc17104-football-insights/blob/main/02_exploring_data.ipynb).
 
 ### 3. Câu hỏi được đúc kết từ quá trình khai thác dữ liệu (Asking meaningful questions)
 
