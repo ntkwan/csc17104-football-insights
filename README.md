@@ -32,6 +32,7 @@ Repository là nơi lưu trữ sản phẩm của quá trình thu thập, khám 
 
 - Notebook `01_collecting_data.ipynb`: Quan sát hai bộ dữ liệu thu thập được và tổng hợp thông tin của cả hai bộ dữ liệu cho quá trình khám phá và phân tích.
 - Notebook `02_exploring_data.ipynb`: Khám phá và tiền xử lý bộ dữ liệu để đặt vấn đề và phục vụ trả lời câu hỏi.
+- Notebook `main.ipynb`: Bao gồm 12 câu hỏi đã được biên soạn lại từ các notebook câu hỏi riêng của từng thành viên
 
 ### 1. Thu thập dữ liệu (Collecting data)
 
@@ -78,15 +79,43 @@ Bộ dữ liệu bao gồm các thông số tổng hợp sau một mùa giải c
 
 - xpts_diff - sai số giữa số điểm thực tế và số điểm kỳ vọng của đội
 
-**Thông tin các bộ dữ liệu**: Nhóm thực hiện phân tích trên 2 bộ dữ liệu `understat.com.csv` (tổng quan) và bộ dữ liệu `understat_per_game.csv` (chi tiết từng trận đấu), tạm gọi hai bộ dữ liệu này là `overview` và `games`, các bộ chi tiết bao gồm:
+- ...
+
+**Thông tin các bộ dữ liệu**: Nhóm thực hiện phân tích trên 2 bộ dữ liệu `understat.com.csv` (tổng quan) và bộ dữ liệu `understat_per_game.csv` (chi tiết từng trận đấu), tạm gọi hai bộ dữ liệu này là `overview` và `details`, các bộ chi tiết bao gồm:
 
 - `overview`: 684 dòng và 24 cột
-- `games`: 24580 dòng và 29 cột
+- `details`: 24580 dòng và 29 cột
 - Cả hai bộ dữ liệu đều không có dòng bị trùng lặp
 - Sau khi thực hiện quá trình tiền xử lý, ta sẽ được 2 file tiền xử lý là `understat.com_preprocess.csv` và `understat_per_game_preprocess.csv`
 
 **Các câu hỏi khác:** Các câu hỏi liên quan tới quá trình khám phá dữ liệu đã được phân tích chi tiết trong file [`02_exploring_data.ipynb`](https://github.com/ntkwan/csc17104-football-insights/blob/main/02_exploring_data.ipynb).
 
 ### 3. Câu hỏi được đúc kết từ quá trình khai thác dữ liệu (Asking meaningful questions)
+
+Bao gồm 12 câu hỏi khác nhau, cụ thể:
+
+- Câu 1: Tỷ lệ thắng của các trận đấu khi diễn ra trên sân nhà và trên sân khách qua từng mùa giải (năm) như thế nào? Điều này có chứng minh được lợi thế sân nhà không?
+
+- Câu 2: Liệu một đội có số trận thắng cao, số trận thua ít thì có xếp hạng cao hơn không? Thống kê trung bình thắng-hòa-thua giữa các thứ hạng.
+
+- Câu 3: Đội bóng nào có hiệu suất tốt nhất trong mỗi giải đấu?
+
+- Câu 4: Các chỉ số như `deep` và `deep_allowed` có mối quan hệ thế nào với thứ hạng cuối cùng?
+
+- Câu 5: Mối quan hệ giữa số điểm thực tế (pts) và số điểm kỳ vọng (xpts) là gì? Top 5 đội bóng của năm gần đây nhất của mỗi giải đấu được kỳ vọng và họ thể hiện thế nào? Sự kỳ vọng (xpts) có ảnh hưởng đến thứ hạng cuối không?
+
+- Câu 6: Số lượng performance được phân bố như thế nào?
+
+- Câu 7: Những chỉ số `xG`, `xGA`, `npxG`, `npxGA` và `xpts` có tương quan thế nào với kết quả trận đấu (thắng, hòa, thua)?
+
+- Câu 8: Có sự khác biệt đáng kể nào về hiệu suất (xG, xGA, pts) giữa các trận sân nhà và sân khách không?
+
+- Câu 9: Các chỉ số `PPDA` có tương quan như thế nào với kết quả trận đấu?
+
+- Câu 10: Điểm số của các đội bóng thay đổi như thế nào qua các mùa giải, từ đó thấy được sự cạnh tranh giữa các mùa giải ra sao?
+
+- Câu 11: Dựa trên điểm số đội bóng qua các mùa giải, điểm của các đội trong các giải đấu vào những năm tiếp theo là như thế nào?
+
+- Câu 12: Các đội bóng có số trận thắng cao có đặc điểm gì về số bàn thắng ghi được và số bàn thua?
 
 ## IV. Tham khảo
