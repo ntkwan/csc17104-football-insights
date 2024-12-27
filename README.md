@@ -24,8 +24,6 @@ Repository là nơi lưu trữ sản phẩm của quá trình thu thập, khám 
   | 21127346 | Nguyễn Trung Quân |
   | 21127451 | Phan Thị Tường Vi |
 
-- **Danh sách phân công:**
-
 ## III. Thông tin đồ án:
 
 ### 0. Tổng quan
